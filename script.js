@@ -165,7 +165,7 @@ function proceedDay(id) {
 
 // Function which load city ===========
 function loadCity(city) {
-	let url = `http://api.weatherapi.com/v1/forecast.json?key=b3a00881717c4805bec145810240606&q=${city}&days=7&aqi=no&alerts=no`;
+	let url = `https://api.weatherapi.com/v1/forecast.json?key=b3a00881717c4805bec145810240606&q=${city}&days=7&aqi=no&alerts=no`;
 	let xhr = new XMLHttpRequest();
 	xhr.open("GET", url);
     xhr.setRequestHeader("content-type", "application/json");
