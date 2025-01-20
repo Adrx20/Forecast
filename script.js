@@ -116,7 +116,7 @@ function proceedDay(id) {
 		</div>
 		<div class="second-section bg">
 			<div class="temp-one-week-block">
-				<h1 class="temp-one-week-text color">7-DAY FORECAST</h1>
+				<h1 class="temp-one-week-text color">3-DAY FORECAST</h1>
 				<form id="container-temp-week" class="container-temp-week">
 				</form>
 			</div>
