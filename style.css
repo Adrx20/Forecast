@@ -570,3 +570,17 @@ body.single-toggle .drop:nth-child(10) {
 		font-size: 29px;
 	}
 }
+
+@media all and (max-width: 390px) {
+    	.search-inp {
+		width: 300px;
+	}
+	
+	#form1 {
+		width: 0px;
+	}
+
+	.main-text {
+		width: 0px;
+	}
+}
