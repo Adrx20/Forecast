@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+	<link rel="stylesheet" href="style.css"/>
+	<title>Weather</title>
+</head>
+
+<body class="back-row-toggle splat-toggle">
+
+	<!-- Main block for the all site  
+	==================================================-->
+	<div class="main">
+		<div class="container">
+			<div class="rain front-row"></div>
+			<div class="rain back-row"></div>
+
+				<div class="main-section bg">
+					<div class="log"><img src="images/weather.png" height="130px" style="margin: 10px 0px;"></div>
+					<div class="cities">
+						<h1 class="citiesH1">The most <span style="color: #00ADB5;">popular</span> cities:</h1>
+						<ul class="cities" id="cities" style="padding: 10px 30px 0px; line-height: 50px; list-style: none; text-align: center;">
+							<li><button class="btn-city btnColor">Kyiv</button></li>
+							<li><button	class="btn-city btnColor">Berlin</button></li>
+							<li><button	class="btn-city btnColor">Paris</button></li>
+							<li><button	class="btn-city btnColor">London</button></li>
+							<li><button	class="btn-city btnColor">Washington</button></li>
+							<li><button	class="btn-city btnColor">Madrid</button></li>
+							<li><button	class="btn-city btnColor">Tokyo</button></li>
+							<li><button	class="btn-city btnColor">Pekin</button></li>
+							<li><button	class="btn-city btnColor">Lissabon</button></li>
+							<li><button	class="btn-city btnColor">Dubai</button></li>
+						</ul>
+					</div>
+					<!-- <div class="dark-light">
+						<div class="light" id="light" style="border-radius: 50px; display: flex; margin: 5px 5px;"><img src="//cdn.weatherapi.com/weather/64x64/day/113.png"></div> 
+						<div class="dark" id="dark" style="border-radius: 50px; display: flex; margin: 5px 5px;"><img src="//cdn.weatherapi.com/weather/64x64/night/113.png"></div> 
+					</div> -->
+				</div>
+
+				<!-- First section in the part of site 
+				==================================================-->
+				<div class="first-section">
+					<!-- Search place for finding cities 
+					==================================================-->
+					<form id="form">
+						<input type="text" name="name" id="input" class="search-inp bg" placeholder="Search for cities">
+						<button type="submit" id="submit" class="search-btn btnColor">Search</button>
+					</form>
+					<!-- Table with info city 
+					==================================================-->
+					<div id="temp-today" class="temp-today">
+					</div>
+					<!-- Block with info for the whole day 
+					==================================================-->
+					<div class="today-fore bg">
+						<div class="today-fore-text" style="color: #F1F1F1;">TODAY'S FORECAST</div>
+						<div id="container-today-blocks" class="container-today-blocks">
+						</div>
+					</div>
+					<!-- Block where are more info about city
+					==================================================-->
+					<div class="air-cond bg">
+						<h2 class="air-cond-text color">AIR CONDITIONS</h2>
+						<div class="air-cond-info">
+							<div id="air-cond-blocks" class="air-cond-blocks">
+							</div>
+						</div>
+					</div>
+				</div>
+				
+		</div>
+	</div>
+	<!-- <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+		integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+		crossorigin="anonymous">
+	</script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="script.js"></script>
+</body>
+
+</html>
