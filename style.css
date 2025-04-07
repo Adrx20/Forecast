@@ -36,28 +36,6 @@ body {
 	width: 500px;
 }
 
-@media all and (max-width: 1440px){
-	.main-main {
-		margin: 24% auto;
-	}
-}
-
-@media all and (max-width: 1024px){
-	.main-main {
-		margin: 35% auto;
-	}
-}
-
-@media all and (max-width: 768px){
-	.main-main {
-		margin: 48% auto;
-	}
-
-	.main-text {
-		font-size: 42px;
-	}
-}
-
 /* Stylies for container, first-section and search block and temp today 
 =======================================================================*/
 .main {
@@ -475,6 +453,7 @@ body.single-toggle .drop:nth-child(10) {
 	.main-section {
 		margin-left: 5px;
 	}
+	
 }
 
 @media all and (max-width: 1440px) {
@@ -489,7 +468,12 @@ body.single-toggle .drop:nth-child(10) {
 	.today-fore {
 		margin-right: 15px;
 	}
+
+	.main-main {
+		margin: 24% auto;
+	}
 }
+
 
 @media all and (max-width: 1024px) {
     .log > img {
@@ -513,6 +497,10 @@ body.single-toggle .drop:nth-child(10) {
 	.second-section {
 		width: 100%;
 	}
+
+	.main-main {
+		margin: 35% auto;
+	}
 }
 
 @media all and (max-width: 811px) {
@@ -523,6 +511,16 @@ body.single-toggle .drop:nth-child(10) {
 	.container-today-blocks {
 		grid-template-columns: repeat(3, 1fr);
 		gap: 10px;
+	}
+}
+
+@media all and (max-width: 768px){
+	.main-main {
+		margin: 48% auto;
+	}
+
+	.main-text {
+		font-size: 42px;
 	}
 }
 
@@ -572,6 +570,8 @@ body.single-toggle .drop:nth-child(10) {
 }
 
 @media all and (max-width: 390px) {
+	
+
     .search-inp {
 		width: 300px;
 	}
@@ -582,5 +582,25 @@ body.single-toggle .drop:nth-child(10) {
 
 	.main-text {
 		width: 0px;
+		font-size: 20px;
 	}
+
+	.main-main {
+        margin: auto;
+    }
+}
+
+@media all and (max-width: 375px) {
+	.search-inp {
+		width: 222px;
+	}
+
+	.main-text {
+		width: 300px;
+		font-size: 19px;
+	}
+
+	.main-main {
+        margin-top: 33vh;
+    }
 }
