@@ -581,12 +581,12 @@ body.single-toggle .drop:nth-child(10) {
 	}
 
 	.main-text {
-		width: 0px;
-		font-size: 20px;
+		width: 300px;
+		font-size: 19px;
 	}
 
 	.main-main {
-        margin: auto;
+        margin-top: 33vh;
     }
 }
 
